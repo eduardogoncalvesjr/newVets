@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.container {
+    padding: 1rem;
+    position: relative;
+}
+
+section {
+    margin-top: 1rem;
+}
+
+.row {
+    position: relative;
+}
+
+h1 {
+    color: #04D9E9;
+}
+
+h2 {
+    color: #06DCC2;
+}
+
+p {
+    font-size: 1.4rem;
+    color: #929292;
+}
+
+p strong {
+    color: #000000;
+}
+
+img {
+    width: 75%;
+}
+
+button {
+    font-size: 1.3rem;
+}
+
+header {
+    padding: 0 1rem;
+}
+
+.navbar-brand {
+    color: #06DCC2;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.navbar_toggler {
+    border: none;
+    background-color: #fff;
+}
+
+.bar {
+    display: block;
+    width: 28px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #04D9E9;
+
+}
+
+@media (min-width: 768px) {
+    .navbar-toggler, .bar {
+        display: none;
+    }
+}
+
+.offcanvas {
+    color: #06DCC2;
+}
+
+.nav-link {
+    font-size: 1.1rem;
+    color: #04D9E9 !important;
+}
+
+.nav-link.active {
+    font-weight: 700 !important;
+}
+
+.hero h1 {
+    font-size: 2.2rem;
+}
+
+.hero_span_top {
+    position: absolute;
+    width: 25px;
+    height: 75px;
+    background: linear-gradient(123deg, rgba(4,217,233,1) 0%, rgba(6,220,194,1) 60%); /*left-right*/
+    top: 0;
+    left: -18px;
+}
+
+.hero_span_bottom {
+    position: absolute;
+    width: 25px;
+    height: 75px;
+    background: linear-gradient(123deg, rgba(6,220,194,1) 0%, rgba(4,217,233,1) 60%); /*right-left*/
+    bottom: 10px;
+    right: 10px;
+    transform: rotate(25deg)
+}
+
+.hero img {
+    border-radius: 31% 69% 39% 61% / 69% 25% 75% 31% ;
+}
+
+.hero button {
+    background: linear-gradient(123deg, rgba(6,220,194,1) 0%, rgba(4,217,233,1) 60%); /*right-left*/;
+    font-size: 1.4rem;
+    color: #fff;
+    font-weight: 700;
+}
+
+.servicos_span_top {
+    position: absolute;
+    width: 75px;
+    height: 25px;
+    background: linear-gradient(123deg, rgba(4,217,233,1) 0%, rgba(6,220,194,1) 60%); /*left-right*/
+    top: 0;
+    left: -25px;
+}
+
+.servicos .row:last-of-type {
+    margin-top: 1.5rem;
+}
+
+.servicos_span_bottom {
+    position: absolute;
+    width: 25px;
+    height: 100px;
+    background: linear-gradient(123deg, rgba(6,220,194,1) 0%, rgba(4,217,233,1) 60%); /*right-left*/
+    bottom: -20px;
+    right: -10px;
+}
+
+.cta {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background: linear-gradient(123deg, rgba(4,217,233,1) 0%, rgba(6,220,194,1) 60%); /*left-right*/
+}
+
+.cta p {
+    color: #fff;
+}
+
+.cta p, strong {
+    padding-top: 1.5rem;
+}
