@@ -2,6 +2,7 @@
 
 body {
     font-family: 'Lato', sans-serif;
+    background-color: #f9f9f9;
 }
 
 * {
@@ -17,6 +18,7 @@ body {
 
 section {
     margin-top: 1rem;
+    overflow: hidden;
 }
 
 .row {
@@ -83,7 +85,7 @@ header {
 }
 
 .nav-link {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     color: #04D9E9 !important;
 }
 
@@ -138,13 +140,23 @@ header {
     margin-top: 1.5rem;
 }
 
+.servicos_imagens img {
+    width: min(50%, 90px);
+    height: min(50%, 125px);
+}
+
+.servicos_imagens span {
+    display: block;
+}
+
 .servicos_span_bottom {
     position: absolute;
-    width: 25px;
-    height: 100px;
+    width: 75px;
+    height: 25px;
     background: linear-gradient(123deg, rgba(6,220,194,1) 0%, rgba(4,217,233,1) 60%); /*right-left*/
-    bottom: -20px;
-    right: -10px;
+    bottom: 0;
+    right: -25px;
+
 }
 
 .cta {
@@ -157,6 +169,12 @@ header {
     color: #fff;
 }
 
-.cta p, strong {
+.cta p strong {
+    color: #fff;
+    font-weight: 700;
     padding-top: 1.5rem;
+}
+
+.cta button {
+    font-weight: 700;
 }
