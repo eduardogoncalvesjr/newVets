@@ -51,6 +51,8 @@ button {
     font-size: 1.3rem;
 }
 
+/* START OF NAVBAR */
+
 header {
     padding: 0 1rem;
 }
@@ -61,12 +63,89 @@ header {
     font-weight: 700;
 }
 
-.navbar_toggler {
-    border: none;
-    background-color: #fff;
+  .hamburger {
+    display: none;
+    cursor: pointer;
+  }
+
+  .navbar {
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav-menu {
+    display: flex;
+    align-items: start;
+    gap: 60px;
+    z-index: 5;
+  }
+
+  .nav-link {
+    transition: 0.5s ease;
+    font-size: 1.3rem;
+    color: #04D9E9 !important;
+  }
+
+  .nav-link.active {
+    font-weight: 700 !important;
 }
 
-.bar {
+  .bar {
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 2px;
+    margin: 5px auto;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+  }
+
+  @media (max-width: 768px) {
+    .hamburger {
+      display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+      opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+      position: fixed;
+      right: -100%;
+      top: 70px;
+      gap: 0;
+      background-color: #f9f9f9;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+      transition: 0.3s;
+    }
+
+    .nav-item {
+      margin: 16px 0;
+    }
+
+    .nav-menu.active {
+      right: 0%;
+    }
+
+    .navbar a {
+      font-size: 1.3rem;
+    }
+
+  }
+
+  .bar {
     display: block;
     width: 28px;
     height: 3px;
@@ -80,19 +159,7 @@ header {
         display: none;
     }
 }
-
-.offcanvas {
-    color: #06DCC2;
-}
-
-.nav-link {
-    font-size: 1.5rem;
-    color: #04D9E9 !important;
-}
-
-.nav-link.active {
-    font-weight: 700 !important;
-}
+  /* END OF NAVBAR */
 
 
 .hero h1 {
@@ -135,7 +202,7 @@ header {
     height: 25px;
     background: linear-gradient(123deg, rgba(4,217,233,1) 0%, rgba(6,220,194,1) 60%); /*left-right*/
     top: 0;
-    left: -25px;
+    right: -25px;
 }
 
 .servicos .row:last-of-type {
@@ -157,7 +224,7 @@ header {
     height: 25px;
     background: linear-gradient(123deg, rgba(6,220,194,1) 0%, rgba(4,217,233,1) 60%); /*right-left*/
     bottom: 0;
-    right: -25px;
+    left: -25px;
 
 }
 
@@ -183,6 +250,11 @@ header {
 
 .contato span {
     display: block;
+    margin: 20px 0;
+}
+
+.map_box iframe {
+    width: 100%;
 }
 
 footer h4 {
@@ -196,4 +268,16 @@ footer h4 {
 
 .footer_social {
     font-size: 2rem;
+}
+
+.top {
+    position: fixed;
+    bottom: 5rem;
+    right: 2rem;
+    text-decoration: none;
+    padding: 10px;
+    color: #000000;
+    font-size: clamp(1.8rem, 0.0667rem + 4.1481vw, 2.8rem);
+    opacity: 0;
+    transition: all 1s;
 }
