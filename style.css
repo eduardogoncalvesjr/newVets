@@ -262,6 +262,10 @@ footer h4 {
     margin-bottom: 3rem;
 }
 
+.footer .copyright {
+  font-size: 1rem;
+}
+
 .footer_links li a {
     text-align: center;
 }
