@@ -24,6 +24,7 @@ section {
 
 .row {
     position: relative;
+
 }
 
 h1 {
@@ -187,6 +188,17 @@ header {
 
 .hero img {
     border-radius: 31% 69% 39% 61% / 69% 25% 75% 31% ;
+}
+
+@media screen and (max-width: 768px) {
+  .reverse-mobile {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .hero img {
+    width: 50%;
+}
 }
 
 .hero button {
