@@ -188,10 +188,6 @@ header {
     transform: rotate(25deg)
 }
 
-.hero img {
-    border-radius: 31% 69% 39% 61% / 69% 25% 75% 31% ;
-}
-
 @media screen and (max-width: 768px) {
   .reverse-mobile {
     display: flex;
@@ -200,6 +196,7 @@ header {
 
   .hero img {
     width: 50%;
+    margin-bottom: 1rem;
 }
 }
 
